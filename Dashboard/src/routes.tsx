@@ -6,6 +6,10 @@ import BusinessProcess from "@pages/businessProcess/BusinessProcess";
 import AddBP from "@pages/businessProcess/add/AddBusinessProcess";
 import EditBP from "@pages/businessProcess/edit/EditBusinessProcess";
 import DetailsBP from "@pages/businessProcess/details/DetailsBusinessProcess";
+import Assessments from "@pages/assessments/Assessments";
+import EditAssessments from "@pages/assessments/edit/EditAssessments";
+import AddAssessments from "@pages/assessments/add/AddAssessments";
+import DetailsAssessments from "@pages/assessments/details/DetailsAssessments";
 
 const AppRoutes = () => {
   return (
@@ -23,6 +27,16 @@ const AppRoutes = () => {
           <Route path="/business-process/edit/:id" element={<EditBP />} />
           <Route path="/business-process/details/:id" element={<DetailsBP />} />
           <Route path="/business-process/*" element={<BusinessProcess />} />
+
+          {/* Group Business Process Routes with Handling undefined routes. */}
+          <Route path="/assessments" element={<Assessments />} />
+          <Route path="/assessments/add" element={<AddAssessments />} />
+          <Route path="/assessments/edit/:id" element={<EditAssessments />} />
+          <Route
+            path="/assessments/details/:id"
+            element={<DetailsAssessments />}
+          />
+          <Route path="/assessments/*" element={<Assessments />} />
 
           {/* Group B Routes */}
           {/* <Route path="/b" element={<BView />} />

@@ -8,8 +8,11 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "paths": {
-      "@pages/*": ["pages/*"],
+      "@components/*": ["components/*"],
       "@constants/*": ["constants/*"],
+      "@hooks/*": ["hooks/*"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
       "@types/*": ["types/*"],
       "@utils/*": ["utils/*"]
     },

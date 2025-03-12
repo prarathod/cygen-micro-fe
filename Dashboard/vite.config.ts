@@ -39,7 +39,19 @@ export default defineConfig({
   resolve: {
     alias: {
       //@ts-ignore
+      "@components": path.resolve(__dirname, "src/components"),
+      //@ts-ignore
+      "@constants": path.resolve(__dirname, "src/constants"),
+      //@ts-ignore
+      "@hooks": path.resolve(__dirname, "src/hooks"),
+      //@ts-ignore
+      "@layouts": path.resolve(__dirname, "src/layouts"),
+      //@ts-ignore
       "@pages": path.resolve(__dirname, "src/pages"),
+      //@ts-ignore
+      "@types": path.resolve(__dirname, "src/types"),
+      //@ts-ignore
+      "@utils": path.resolve(__dirname, "src/utils"),
     },
   },
   build: {
